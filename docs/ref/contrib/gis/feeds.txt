@@ -13,7 +13,7 @@ Django's, please consult :doc:`Django's syndication documentation
 
 .. _W3C Geo: https://www.w3.org/2003/01/geo/
 
-__ https://georss.org
+__ https://www.ogc.org/standard/georss/
 
 Example
 =======
@@ -40,18 +40,14 @@ API Reference
             item_geometry = ...
 
             # Also a function with no arguments
-            def geometry(self):
-                ...
+            def geometry(self): ...
 
-            def item_geometry(self):
-                ...
+            def item_geometry(self): ...
 
             # And as a function with a single argument
-            def geometry(self, obj):
-                ...
+            def geometry(self, obj): ...
 
-            def item_geometry(self, item):
-                ...
+            def item_geometry(self, item): ...
 
     .. method:: geometry(obj)
 
